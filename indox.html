@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dugsiga Nileyn</title>
+  <style>
+    /*——  Dejinta guud  ——*/
+    *{box-sizing:border-box;margin:0;padding:0;font-family:sans-serif}
+    body{line-height:1.6;color:#222;background:#fff}
+    header{background:#0d6efd;color:#fff;padding:1rem 0}
+    header .container{display:flex;align-items:center;justify-content:space-between}
+    header img{height:48px}
+    nav ul{list-style:none;display:flex;gap:1rem}
+    nav a{color:#fff;text-decoration:none;font-weight:600}
+    nav a:hover{text-decoration:underline}
+
+    .hero{background:#f2f6ff;padding:3rem 1rem;text-align:center}
+    .hero h1{font-size:2rem;margin-bottom:.5rem}
+    .hero p{max-width:600px;margin:auto}
+
+    section{padding:2.5rem 1rem}
+    .container{max-width:960px;margin:auto}
+
+    /*——  Shaxda adeegyada  ——*/
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+    .card{background:#fff;border:1px solid #e0e0e0;padding:1rem;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,0.05)}
+    .card h3{margin-bottom:.5rem}
+
+    /*——  Foomka xiriirka  ——*/
+    form{display:grid;gap:1rem;max-width:540px;margin:auto}
+    label{font-weight:600}
+    input,textarea{padding:.6rem;border:1px solid #ccc;border-radius:4px;width:100%}
+    button{padding:.7rem 1.2rem;border:none;background:#0d6efd;color:#fff;border-radius:4px;font-size:1rem;cursor:pointer}
+    button:hover{filter:brightness(110%)}
+
+    /*——  Footer  ——*/
+    footer{background:#0d6efd;color:#fff;text-align:center;padding:1rem;margin-top:2rem}
+  </style>
+</head>
+<body>
+
+  <!--  Header  -->
+  <header>
+    <div class="container">
+      <img src="WhatsApp Image 2025-06-14 at 5.42.52 AM (1).jpeg" alt="Calaamadda Dugsiga Nileyn" />
+      <nav>
+        <ul>
+          <li><a href="#home">Bogga Hore</a></li>
+          <li><a href="#about">Nagu Saabsan</a></li>
+          <li><a href="#services">Adeegyada</a></li>
+          <li><a href="#contact">Nala Soo Xiriir</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--  Hero / Home  -->
+  <section id="home" class="hero">
+    <h1>Ku Soo Dhawoow Dugsiga Nileyn</h1>
+    <p>Waxaan bixinnaa waxbarasho casri ah oo tayo sare leh oo diiradda saarta horumarinta kartida ardayda Soomaaliyeed.</p>
+  </section>
+
+  <!--  About Us  -->
+  <section id="about">
+    <div class="container">
+      <h2>Ku Saabsan Dugsigeena</h2>
+      <p>Dugsiga Nileyn waxaa la aasaasay 2010 si carruurta loogu siiyo waxbarasho dhamaystiran—cilmi, farsamo iyo akhlaaq.</p>
+      <p>Waxaan haynaa macallimiin khibrad leh, maktabad casri ah, iyo fasallo si heer sare ah u qalabaysan si ardaydu u gaaraan awooddooda ugu sarreysa.</p>
+    </div>
+  </section>
+
+  <!--  Services  -->
+  <section id="services">
+    <div class="container">
+      <h2>Adeegyada Aan Bixino</h2>
+      <div class="services">
+        <div class="card">
+          <h3>Waxbarashada Dugsiga Hoose/Dhexe</h3>
+          <p>Manhaj buuxa oo loogu talagalay Fasallada 1 – 8, kuna waafaqsan heerarka qaranka.</p>
+        </div>
+        <div class="card">
+          <h3>Kooxaha Isboortiga</h3>
+          <p>Kubadda cagta, kubadda koleyga, iyo orodka—kor u qaada caafimaadka iyo wadajirka.</p>
+        </div>
+        <div class="card">
+          <h3>Qolka ICT‑ga</h3>
+          <p>Ardaydu waxay baranayaan xirfadaha kombiyuutarka iyo barnaamijyada aasaasiga ah.</p>
+        </div>
+        <div class="card">
+          <h3>Maktabad Casri ah</h3>
+          <p>Ururin ballaaran oo buugaag iyo e‑buugaag ah, iyo goobo xasilloon oo wax‑akhris.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  Contact Form  -->
+  <section id="contact">
+    <div class="container">
+      <h2>Nala Soo Xiriir</h2>
+      <p>Fadlan buuxi foomkan haddii aad qabtid su’aalo, talooyin, ama codsiyo.</p>
+
+      <form action="#" method="post">
+        <div>
+          <label for="name">Magacaaga *</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="grade">Fasal / Heer</label>
+          <input type="text" id="grade" name="grade" />
+        </div>
+        <div>
+          <label for="message">Fariintaada</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <button type="submit">Dir Fariinta</button>
+      </form>
+    </div>
+  </section>
+
+  <!--  Footer  -->
+  <footer>
+    <p>&copy; 2025 Dugsiga Nileyn. Xuquuqdu Way Dhamaan.</p>
+  </footer>
+
+</body>
+</html>
